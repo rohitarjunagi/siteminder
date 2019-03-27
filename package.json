@@ -1,0 +1,26 @@
+{
+  "name": "siteminder",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha ./tests --recursive"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "curl-request": "^1.1.1",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "email-validator": "^2.0.4",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jsonpath": "^1.0.1",
+    "morgan": "~1.9.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^6.0.2"
+  }
+}
