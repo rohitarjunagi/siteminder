@@ -25,5 +25,5 @@ env:
 
 # after_success:
 #   - sudo docker login --rohitarjunagi@gmail.com $ --password $Password registry.heroku.com
-#   - sudo docker tag myangularapp:latest registry.heroku.com/adam-myangularapp/web
-#   - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST = "false" ]; then sudo docker push registry.heroku.com/adam-myangularapp/web; fi
+#   - sudo docker tag siteminder:latest registry.heroku.com/siteminder/web
+#   - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST = "false" ]; then sudo docker push registry.heroku.com/siteminder/web; fi
