@@ -160,20 +160,7 @@ describe('Request Body Validation Errors', () => {
 
 
 describe('Send Email Service', () => {
-
-    // before(() => {
-    //     process.env['SENDGRID_API_KEY'] = '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';
-    //     process.env['MAILGUN_API_KEY'] = '2c2e0549a3a41b5fa79b00d5f2a08725-e51d0a44-167a154c';
-    // });
-
-    // after(() => {
-    //     delete process.env['SENDGRID_API_KEY'];
-    //     delete process.env['MAILGUN_API_KEY'];
-    // });
-
-    console.log('what is process.env[SENDGRID_API_KEY]', process.env['SENDGRID_API_KEY']);
-    console.log('what is process.env[MAILGUN_API_KEY]', process.env['MAILGUN_API_KEY']);
-
+    
     it('it should send email through mail gun', done => {
         const requestBody = {
             "senderEmail": "rohitarjunagi@gmail.com",
