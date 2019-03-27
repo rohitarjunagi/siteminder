@@ -9,5 +9,5 @@ services:
     ports:
       - "80:3000"
     environment:
-      MAILGUN_API_KEY: 2c2e0549a3a41b5fa79b00d5f2a08725-e51d0a44-167a154c
-      SENDGRID_API_KEY: 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
+      MAILGUN_API_KEY: API_KEY
+      SENDGRID_API_KEY: API_KEY
