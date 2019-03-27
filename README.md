@@ -74,6 +74,8 @@ To use the app, post data to the app on this url: (https://siteminder-coding-cha
 
 - Unit test cases suite is missing as part of the code submission. Ideally, unit test cases needs to be written for the mailService, mailGunService and sendGridService
 
+- Eslint has to be applied to the project to enforce coding standards
+
 - for a full stack experience, a react app needs to be developed which uses axios and react components to handle input form, form validation and form submission and display of results. This react app can be hosted on a static hosting service like s3.
 
 ## Challenges
