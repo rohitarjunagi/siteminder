@@ -2,23 +2,24 @@ language: node_js
 node_js:
   - "10.15.3"
 
-services:
-  - docker
+# services:
+#   - docker
 
-env:
-  - DOCKER_COMPOSE_VERSION=2
+# env:
+#   - DOCKER_COMPOSE_VERSION=2
 
-before_install:
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-  - sudo docker-compose up -d
+# before_install:
+#   - sudo rm /usr/local/bin/docker-compose
+#   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+#   - chmod +x docker-compose
+#   - sudo mv docker-compose /usr/local/bin
+#   - sudo docker-compose build
+#   - sudo docker-compose up -d
 
 script:
   - npm test --watch=false 
 
-after_success:
-  - sudo docker login --rohitarjunagi@gmail.com $ --password 4b5dad8d-4195-46d7-9a0d-c8b853db1e43 registry.heroku.com
-  - sudo docker tag myangularapp:latest registry.heroku.com/adam-myangularapp/web
-  - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST = "false" ]; then sudo docker push registry.heroku.com/adam-myangularapp/web; fi
+# after_success:
+#   - sudo docker login --rohitarjunagi@gmail.com $ --password $Password registry.heroku.com
+#   - sudo docker tag myangularapp:latest registry.heroku.com/adam-myangularapp/web
+#   - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST = "false" ]; then sudo docker push registry.heroku.com/adam-myangularapp/web; fi
