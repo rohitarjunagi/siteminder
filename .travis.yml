@@ -1,7 +1,14 @@
 language: node_js
 node_js:
 - 10.15.3
+script:
+- npm test --watch=false
+env:
+  matrix:
+    secure: C/rafQTs4rM5yQObs5QH7Rnf5Ua7k4KxBKIw381uCdtZ7aO7nl+lna0/0o++15Rch/5XO9J0rEOGSCUg8nFoXrvkONk2cVST703FizN3VcIi2MddbynjhUEBrHCfURnGLOQSYacTEYBLXCLPRpB/i2uO6mKImZCRFv7CCS8omZOoPuLUPjah+9TLhm8BDTyLAf+5h+xFQnc+psre/7oYLGwv76XCH2cmEgFgc48tiPX+ZkHqrekSEXVxrLVsK3izM6wCrYlqyEK//g3bXy+XmpRCUPIZBaNu/xud0w6YBMdDC4eoO6ch97rsKHmp+WlyebHN1f4xTDZ+XrcNK9n0V7JkOYhV9CjArjLXyEPdKye9ISKzIcVqQHtwhzIKHr3K5W9Y4bi7h/eg9hssTlwMwTFj/dEJ1hDSfUlKdgXXYT1enw+TjCXz8jLnWnrtpOBnKwrdlPqm9BvQsqt2kMM4nwm21mKqS3omGD02WSNhunXqJXxSi0yAsbhggNdZCd/RSJtftHv/zmp/+1Rkt+QQkEGDv6Gy15zhx3uDkSODwAQ8lBpKAbejHYHdV2hnh5+gPkJ6nmMoP3SxQXQlHIZ9iF8G5z9W8cxAiWqTc5Au1ULEBwlGREGWg9Mmwq4jVW91pX3B77Oqr+d9WhweBbgE4nnaMwVhTFNRpkTbE3KHXFw=
 
+
+# using docker compose for deployment of app
 # services:
 #   - docker
 
@@ -15,9 +22,6 @@ node_js:
 #   - sudo mv docker-compose /usr/local/bin
 #   - sudo docker-compose build
 #   - sudo docker-compose up -d
-
-script:
-- npm test --watch=false
 
 # after_success:
 #   - sudo docker login --rohitarjunagi@gmail.com $ --password $Password registry.heroku.com
