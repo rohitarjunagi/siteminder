@@ -68,7 +68,7 @@ To use the app, post data to the app on this url: (https://siteminder-coding-cha
 
 - travis and heroku needs to be wired up with the docker images and the images should be deployed on heroku and not the application directly (docker deployment commands are commented out in the travis file) I couldn't get the whole thing working end to end
 
-- the docker compose should be used to iject the env variables. Right now I have setup the env variables inside in the dashboard of both Heroku and Travis.
+- the docker compose should be used to inject the env variables. Right now I have setup the env variables inside in the dashboard of heroku and have encrypted the env variables for travis.
 
 - appropriate level of logging has to be done based on dev or production environment
 
